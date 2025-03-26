@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="5edd9cb7865bb" translatesAutoresizingMaskIntoConstraints="NO" id="UFt-32-Vmy">
+                                <rect key="frame" x="20" y="90" width="374" height="238"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="UFt-32-Vmy" secondAttribute="height" multiplier="11:7" id="txW-kz-VL2"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aMY-dm-mhw">
+                                <rect key="frame" x="20" y="348" width="374" height="238"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="aMY-dm-mhw" secondAttribute="height" multiplier="11:7" id="tzc-Te-hSS"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="aMY-dm-mhw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="7GD-AW-aaV"/>
+                            <constraint firstItem="UFt-32-Vmy" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="46" id="GVb-oM-s6x"/>
+                            <constraint firstItem="aMY-dm-mhw" firstAttribute="top" secondItem="UFt-32-Vmy" secondAttribute="bottom" constant="20" id="Tk3-Oe-Qso"/>
+                            <constraint firstItem="UFt-32-Vmy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="WUx-kM-Ma3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="UFt-32-Vmy" secondAttribute="trailing" constant="20" id="hUY-el-13H"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="aMY-dm-mhw" secondAttribute="trailing" constant="20" id="oVH-QZ-tl0"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="NewImg" destination="aMY-dm-mhw" id="Sxf-z9-PlB"/>
+                        <outlet property="OldImg" destination="UFt-32-Vmy" id="wKV-il-ctR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="93.75"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="5edd9cb7865bb" width="800" height="480"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
